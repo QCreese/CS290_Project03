@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web_design.css">
+    <title>Whatcha Got Recipes!</title>
+</head>
+<body>
+    <header>
+        <img src="phonto.JPG" width="450" height="250" alt="Whatcha Got Recipes Logo">
+        <h1>Whatcha Got Recipes!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="easy_recipes.html">Easy Recipes</a></li>
+            <li><a href="medium_recipes.html">Medium Recipes</a></li>
+            <li><a href="hard_recipes.html">Hard Recipes</a></li>
+        </ul>
+    </nav>
+
+    <div class="searchBox">
+        <input type="search" id="search" placeholder="Search Recipes...">
+        <div class="searchRecommendations" id="searchResults"></div>
+    </div>
+
+    <main>
+        <section id="recipeList">
+            <h2>Recipe List</h2>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="btn_easy">Easy Recipes</button>
+                <div class="dropdown-content" id="dropdown_easy">
+                    <a href="easy_recipes.html#easy_breakfast">Easy Breakfast Recipes</a>
+                    <a href="easy_recipes.html#easy_lunch">Easy Lunch Recipes</a>
+                    <a href="easy_recipes.html#easy_dinner">Easy Dinner Recipes</a>
+                    <a href="easy_recipes.html#easy_dessert">Easy Dessert Recipes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="btn_medium">Medium Recipes</button>
+                <div class="dropdown-content" id="dropdown_medium">
+                    <a href="medium_recipes.html#medium_breakfast">Medium Breakfast Recipes</a>
+                    <a href="medium_recipes.html#medium_lunch">Medium Lunch Recipes</a>
+                    <a href="medium_recipes.html#medium_dinner">Medium Dinner Recipes</a>
+                    <a href="medium_recipes.html#medium_dessert">Medium Dessert Recipes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="btn_hard">Hard Recipes</button>
+                <div class="dropdown-content" id="dropdown_hard">
+                    <a href="hard_recipes.html#hard_breakfast">Hard Breakfast Recipes</a>
+                    <a href="hard_recipes.html#hard_lunch">Hard Lunch Recipes</a>
+                    <a href="hard_recipes.html#hard_dinner">Hard Dinner Recipes</a>
+                    <a href="hard_recipes.html#hard_dessert">Hard Dessert Recipes</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CS 290 2024 Whatcha Got Recipes!</p>
+    </footer>
+    <script src="dropdown.js" defer></script>
+</body>
+</html>
